@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бриф на маркетинговые услуги</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center py-12 px-4">
+        <div class="max-w-2xl w-full bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6 space-x-4">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16"></div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-800">Бриф на маркетинговые услуги</h1>
+                    <p class="text-gray-600">Пожалуйста, заполните форму ниже, чтобы помочь нам лучше понять ваш проект.</p>
+                </div>
+            </div>
+            <form id="briefForm" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 mb-1">Название проекта</label>
+                    <input
+                        type="text"
+                        name="projectName"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Введите название"
+                    />
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1">Цели и задачи</label>
+                    <input
+                        type="text"
+                        name="goals"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Опишите цели проекта"
+                    />
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1">Целевая аудитория</label>
+                    <input
+                        type="text"
+                        name="audience"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Опишите целевую аудиторию"
+                    />
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1">Бюджет</label>
+                    <input
+                        type="text"
+                        name="budget"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Укажите бюджет"
+                    />
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1">Сроки</label>
+                    <input
+                        type="text"
+                        name="timeline"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Укажите сроки выполнения"
+                    />
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1">Дополнительные детали</label>
+                    <textarea
+                        name="details"
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="Опишите любые дополнительные пожелания или детали"
+                    ></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="bg-indigo-500 text-white py-2 px-4 rounded shadow hover:bg-indigo-600 transition-colors"
+                >
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
